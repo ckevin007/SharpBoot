@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Controller\" />
+		<Folder Include="staticfiles\html\logdashboard\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Log4net\SharpBoot.Starter.Log4net.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="staticfiles\html\logdashboard\index.html">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="XML\log4net-config.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

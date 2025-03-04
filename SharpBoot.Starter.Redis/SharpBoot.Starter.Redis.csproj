@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Authors>zed</Authors>
+		<Version>1.0.5</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CSRedisCore" Version="3.8.670" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+	</ItemGroup>
+
+</Project>

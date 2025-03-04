@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>XML\swagger.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpBoot.QuickApi\SharpBoot.QuickApi.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Caching\SharpBoot.Starter.Caching.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Freesql\SharpBoot.Starter.Freesql.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Log4net.DashBoard\SharpBoot.Starter.Log4net.DashBoard.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Log4net\SharpBoot.Starter.Log4net.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Nacos\SharpBoot.Starter.Nacos.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Quartz\SharpBoot.Starter.Quartz.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.RabbitMQ\SharpBoot.Starter.RabbitMQ.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Redis\SharpBoot.Starter.Redis.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.WebApiClient\SharpBoot.Starter.WebApiClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="XML\log4net-config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="XML\swagger.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

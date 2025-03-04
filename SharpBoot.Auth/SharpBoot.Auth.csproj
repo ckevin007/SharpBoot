@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+    <ProjectReference Include="..\SharpBoot\SharpBoot.csproj" />
+  </ItemGroup>
+
+</Project>

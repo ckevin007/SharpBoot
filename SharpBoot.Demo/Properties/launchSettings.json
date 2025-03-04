@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SharpBoot.Demo": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

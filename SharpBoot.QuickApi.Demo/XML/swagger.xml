@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpBoot.QuickApi.Demo</name>
+    </assembly>
+    <members>
+        <member name="M:SharpBoot.QuickApi.Demo.service.TestConsumer.Receive(System.String)">
+            <summary>
+            也可写全队列参数
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:SharpBoot.QuickApi.Demo.service.TestConsumer.Receive2(System.String)">
+            <summary>
+            也可写全队列参数
+            </summary>
+            <param name="msg"></param>
+        </member>
+    </members>
+</doc>

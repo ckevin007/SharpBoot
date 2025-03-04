@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>XML\swagger.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpBoot.Aspnet\SharpBoot.Aspnet.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Caching\SharpBoot.Starter.Caching.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Nacos\SharpBoot.Starter.Nacos.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Redis\SharpBoot.Starter.Redis.csproj" />
+    <ProjectReference Include="..\SharpBoot.Starter.Swagger\SharpBoot.Starter.Swagger.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="XML\swagger.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>

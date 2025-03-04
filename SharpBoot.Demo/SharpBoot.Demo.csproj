@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<StartupObject>SharpBoot.Demo.Program</StartupObject>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<NoWarn>1701;1702;0649;1591;0694;0169;IDE0051;IDE0044</NoWarn>
+		<OutputPath>XML</OutputPath>
+		<DocumentationFile>XML\swagger.xml</DocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="XML\log4net-config.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="XML\netcoreapp3.1\appsettings.Development.json" />
+		<Content Include="XML\netcoreapp3.1\appsettings.json" />
+		<Content Include="XML\netcoreapp3.1\SharpBoot.Demo.deps.json" />
+		<Content Include="XML\netcoreapp3.1\SharpBoot.Demo.runtimeconfig.dev.json" />
+		<Content Include="XML\netcoreapp3.1\SharpBoot.Demo.runtimeconfig.json" />
+		<Content Include="XML\netcoreapp3.1\swagger.xml" />
+		<Content Include="XML\netcoreapp3.1\XML\swagger.xml" />
+		<Content Include="XML\swagger.xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="XML\netcoreapp3.1\Autofac.dll" />
+		<None Include="XML\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll" />
+		<None Include="XML\netcoreapp3.1\Castle.Core.dll" />
+		<None Include="XML\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll" />
+		<None Include="XML\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" />
+		<None Include="XML\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+		<None Include="XML\netcoreapp3.1\Microsoft.OpenApi.dll" />
+		<None Include="XML\netcoreapp3.1\Newtonsoft.Json.Bson.dll" />
+		<None Include="XML\netcoreapp3.1\Newtonsoft.Json.dll" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Common.dll" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Common.pdb" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Demo.dll" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Demo.exe" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Demo.pdb" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.dll" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.pdb" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Swagger.Starter.dll" />
+		<None Include="XML\netcoreapp3.1\SharpBoot.Swagger.Starter.pdb" />
+		<None Include="XML\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll" />
+		<None Include="XML\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+		<None Include="XML\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+		<None Include="XML\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="FreeSql.Provider.MySql" Version="2.5.100" />
+		<PackageReference Include="IdGen" Version="3.0.7" />
+		<PackageReference Include="IdGen.DependencyInjection" Version="3.0.7" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Caching\SharpBoot.Starter.Caching.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Freesql\SharpBoot.Starter.Freesql.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Log4net\SharpBoot.Starter.Log4net.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Quartz\SharpBoot.Starter.Quartz.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Redis\SharpBoot.Starter.Redis.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Swagger\SharpBoot.Starter.Swagger.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.RabbitMQ\SharpBoot.Starter.RabbitMQ.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.WebApiClient\SharpBoot.Starter.WebApiClient.csproj" />
+		<ProjectReference Include="..\SharpBoot\SharpBoot.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="SSL\" />
+	</ItemGroup>
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties appsettings_1json__JsonSchema="" />
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>

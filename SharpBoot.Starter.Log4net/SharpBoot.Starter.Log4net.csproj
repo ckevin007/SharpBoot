@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Authors>zed</Authors>
+		<Company>zed</Company>
+		<Product>SharpBoot.Starter.Log4net</Product>
+		<Version>1.0.4</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="log4net" Version="2.0.12" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="XML\log4net-config.xml">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>

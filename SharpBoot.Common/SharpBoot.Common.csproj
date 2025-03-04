@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<OutputType>Library</OutputType>
+		<IsPackable>true</IsPackable>
+		<Authors>zed</Authors>
+		<Company>zed</Company>
+		<Version>1.2.5</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Startups\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Castle.Core" Version="4.4.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Authors>zed</Authors>
+		<Version>1.0.2</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="RabbitMQ.Helper" Version="1.0.4" />
+	  <PackageReference Include="RabbitMQ.Helper.Injection" Version="1.0.4" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+	</ItemGroup>
+</Project>

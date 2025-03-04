@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Authors>zed</Authors>
+		<Company>zed</Company>
+		<Version>1.0.8</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharpBoot.Common\SharpBoot.Common.csproj" />
+		<ProjectReference Include="..\SharpBoot.Starter.Log4net\SharpBoot.Starter.Log4net.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Quartz" Version="3.3.2" />
+	</ItemGroup>
+</Project>
